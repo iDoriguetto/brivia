@@ -50,6 +50,10 @@ nav {
     }
   }
 
+  input.form-control.me-2::placeholder {
+    color: $white !important;
+  }
+
   a.menu-btn{
     font-size: 14px;
     font-weight: 600;
