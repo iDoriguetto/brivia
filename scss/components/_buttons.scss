@@ -1,0 +1,22 @@
+@use "../starter" as *;
+@import "../components/mixins";
+
+button{
+  padding: 3px 24px;
+
+  span{
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    @include gradient ();
+    color: $white;
+  }
+
+  img{
+    margin: 0 0 3px;
+  }
+}

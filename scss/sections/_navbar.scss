@@ -1,0 +1,111 @@
+@use "../starter" as *;
+@import "../components/mixins";
+
+.navbar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+nav {
+  backdrop-filter: blur(8px);
+  background-color: #2a2a2a85 !important;
+
+  > .container > .row .col-md {
+    padding: 12px;
+  }
+  > div.container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .menu{
+    span{
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .row div{
+    padding: 6px 0;
+  }
+
+  .bg-light{
+    background-color: #ffffff1f !important;
+  }
+
+  .d-flex{
+    margin: 10px 15px !important;
+  }
+
+  input.form-control.me-2 {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  a.search-btn {
+    img {
+      width: 15px;
+      margin: 10px 0;
+    }
+  }
+
+  a.menu-btn{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    img {
+      width: 40px;
+      padding-right: 10px;
+      margin: 20px 0;
+    }
+  }
+
+  .col-md-2.col-sm-2 {
+    text-align-last: center;
+  }
+
+}
+
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 0;
+  height: 100%;
+  padding-top: 10px;
+  overflow-x: hidden;
+  background-color: $black-gray-dark;
+  transition: .5s;
+
+
+  a {
+    display: block;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    text-decoration: none;
+    transition: .3s;
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav { padding-top: 15px; }
+  .sidenav a { font-size: 18px; }
+}
+
